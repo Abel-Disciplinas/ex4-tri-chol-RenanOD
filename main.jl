@@ -14,7 +14,7 @@ function resolve_chol_tri(d, e, b)
   for i in 2:length(d)
     b[i] = (b[i] - b[i-1]*e[i-1])/d[i]
   end
-  b[length(d)] /= d[length(d)]
+  b[end] /= d[end]
   for i in length(d)-1:-1:1
     b[i] = (b[i] - e[i]*b[i+1])/d[i]
   end
