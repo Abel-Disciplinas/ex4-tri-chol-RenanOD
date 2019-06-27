@@ -7,7 +7,6 @@ function chol_tri(d, e)
     d[i] -= e[i-1]^2
     d[i] = sqrt(d[i])
   end
-  return d, e
 end
 
 function resolve_chol_tri(d, e, b)
